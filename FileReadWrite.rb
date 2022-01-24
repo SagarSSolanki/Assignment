@@ -1,0 +1,7 @@
+f = File.open("sagar.txt", "r")
+puts f.read()
+f = File.open("sagar.txt", "a")
+f.write("\nSagar Singh")
+f.close()
+f = File.open("sagar.txt", "r")
+puts f.read()
