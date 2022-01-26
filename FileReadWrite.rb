@@ -1,7 +1,9 @@
-f = File.open("sagar.txt", "r")
-puts f.read()
-f = File.open("sagar.txt", "a")
-f.write("\nSagar Singh")
-f.close()
-f = File.open("sagar.txt", "r")
-puts f.read()
+file = File.open("sagar.txt", "r")
+puts file.read
+
+file = File.open("sagar.txt", "a")
+file.write("\nSagar Singh")
+file.close
+
+file = File.open("sagar.txt", "r")
+puts file.read
