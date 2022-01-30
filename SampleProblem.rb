@@ -1,4 +1,4 @@
-exemption = ["chocolate" , "cheese" , "book" , "pills" , "tablet" , "chocolates"]
+exemption = ["chocolate", "cheese", "book", "pills", "tablet", "chocolates"]
 puts "Enter items : "
 items = Array.new
 

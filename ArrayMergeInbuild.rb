@@ -1,6 +1,6 @@
-arr1 = [1 , 2 , 3 , 4 , 5]
-arr2 = [6 , 7 , 8 , 9 , 10]
+array1 = [1, 2, 3, 4, 5]
+array2 = [6, 7, 8, 9, 10]
 
-arr1 = arr1.concat(arr2)
+array1 = array1.concat(array2)
 
-puts arr1
+puts array1

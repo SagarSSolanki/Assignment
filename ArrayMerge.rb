@@ -1,8 +1,8 @@
-arr1 = [1 , 2 , 3 , 4 , 5]
-arr2 = [6 , 7 , 8 , 9 , 10]
+array1 = [1, 2, 3, 4, 5]
+array2 = [6, 7, 8, 9, 10]
 
-for i in arr2
-  arr1 << (i)
+for i in array2
+  array1 << (i)
 end
 
-puts arr1
+puts array1

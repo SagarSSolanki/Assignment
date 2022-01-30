@@ -1,5 +1,5 @@
-arr = [1 , 2 , 3 , 4 , 5]
+array = [1, 2, 3, 4, 5]
 
-arr = arr.map{ |i| puts i * 2}
+array = array.map{ |i| puts i * 2}
 
-puts arr
+puts array 

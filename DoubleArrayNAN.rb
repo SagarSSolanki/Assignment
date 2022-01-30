@@ -1,6 +1,6 @@
-arr = [1 , 2 , "NAN" , 3 , 4]
+array = [1, 2, "NAN", 3, 4]
 
-arr = arr.map{ |i| 
+array = array.map{ |i| 
 if i.is_a? Numeric
   i * 2
 else
@@ -8,4 +8,4 @@ else
 end
 }
 
-puts arr
+puts array 
