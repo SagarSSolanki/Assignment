@@ -8,18 +8,18 @@ for i in 0..size_of_array-1
   array[i] = gets.chomp
 end
 
-Frequency_Hash = Hash.new
+frequency_hash = Hash.new
 
 for i in array
 
-  if !Frequency_Hash.key?(i)
-    Frequency_Hash[i] = 1
+  if !frequency_hash.key?(i)
+    frequency_hash[i] = 1
   else
-    Frequency_Hash[i] = 1 + Frequency_Hash[i]
+    frequency_hash[i] = 1 + frequency_hash[i]
   end
 
 end
 
-Frequency_Hash.each do |key, value|
-  puts key.to_s + " - " +value.to_s
+frequency_hash.each do |key, value|
+  puts "#{key} - #{value}"
 end
