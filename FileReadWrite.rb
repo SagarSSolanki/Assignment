@@ -7,3 +7,4 @@ file.close
 
 file = File.open("sagar.txt", "r")
 puts file.read
+ 

@@ -6,3 +6,4 @@ for i in array2
 end
 
 puts array1
+ 
