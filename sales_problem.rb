@@ -6,9 +6,8 @@ class Tax
   
       loop do
         str = gets.chomp
-        if str.empty?
-          break
-        end
+        break if str.empty?
+
         @@sales_items.push(str)
       end
     end
