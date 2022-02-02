@@ -1,40 +1,31 @@
-exemption = ["chocolate", "cheese", "book", "pills", "tablet", "chocolates"]
+exemption = %w(chocolate cheese book pills tablet chocolates)
 puts "Enter items : "
 items = Array.new
 
 loop do
   str = gets.chomp
 
-  if str.empty?
-    break
-  end
-
+  break if str.empty?
   items.push(str)
 end
 
 total_tax = 0
 total = 0
 
-for i in items
-  arr = i.split
+for item in items
+  arr = item.split
   price = arr[-1].to_f
   import_tax = 0
   sales_tax = 0
 
-  if i.include? "imported"
-    import_tax = (price * 0.05).round(2)
-  end
+  import_tax = (price * 0.05).round(2) if item.include? "imported" 
 
   flag = 0
-  for e in exemption
-    if (i.include? e)
-      flag = 1
-    end
+  for element in exemption
+    flag = 1 if item.include? element
   end
 
-  if flag == 0
-    sales_tax = (price * 0.1).round(2)
-  end
+  sales_tax = (price * 0.1).round(2) if flag == 0
 
   total_tax = total_tax + sales_tax + import_tax
   total = total + sales_tax + import_tax + price
@@ -48,5 +39,5 @@ for i in items
   puts ""
 end
 
-puts total_tax.round(2) , total.round(2)
- 
+puts "Sales Tax : #{total_tax.round(2)}"
+puts "Total Amount : #{total.round(2)}"
