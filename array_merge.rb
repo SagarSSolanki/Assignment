@@ -6,4 +6,3 @@ for item in array2
 end
 
 puts array1
- 
